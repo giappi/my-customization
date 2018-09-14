@@ -1,0 +1,25 @@
+[user]
+    email = *******@gmail.com
+    name = Giappi
+
+[core]
+    editor = nano
+    autocrlf = false
+
+# Alias to make command meaningful
+[alias]
+    ## reset a file to HEAD
+    revert-file = checkout HEAD -- 
+    ## show stashed list
+    stashlist =  stash list --pretty=format:\"%C(bold blue)%gd%C(reset) (%C(magenta)%h%C(reset)) -- %<(70,trunc)%s %C(green)(%cr)\"
+
+
+# Configure external diff tool
+## select tool to diff when use command "git difftool"
+[diff]
+    tool = diffuse
+
+## configure for a diff tool
+[difftool "diffuse"]
+    path = /usr/bin/diffuse
+    prompt = true
