@@ -1,0 +1,5 @@
+#!/bin/bash
+
+## Extrect AAC Audio from WEBM
+ffmpeg -i "$1" -vn -acodec copy "$1.oga";
+echo "Converted to $1.aac";

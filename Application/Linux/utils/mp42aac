@@ -1,0 +1,5 @@
+#!/bin/bash
+
+## Extract AAC Audio from MP4 Video
+ffmpeg -i "$1" -acodec copy "$1.aac";
+echo "Converted to $1.aac";
